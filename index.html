@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>VERCHY</title>
+    <meta name="description" content="Сайт Verchy">
+    <meta name="theme-color" content="#c9029e">
+    <link rel="icon" type="image/png" sizes="300x250" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSO1KDX9heSdijTzqAMOrfKRPb2EjF6twiE4w&usqp=CAU">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+  font-size: 17px;
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+}
+
+.content {
+  position: fixed;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+
+#myBtn {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+#myBtn:hover {
+  background: #ddd;
+  color: black;
+}
+</style>
+</head>
+<body>
+
+<video loop id="myVideo">
+  <source src="seti.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+
+<div class="content">
+  <h1>VERCHY</h1>
+  <p>Саша, 14 лет. Живу в Москве. Пишу кодики на Python и являюсь разработчиком верифицированного бота MaryBot. Люблю смотреть аниме и читать мангу. Учусь играть в osu! <br> Мои ссылочки можно найти ниже.<br> Предлагаю вам послушать песню Сети - Quiizzzmeow под прекрасный аниме эдит, нажав на кнопушку ниже :3<br> ⚠️ Обратите внимание, в видео присутствуют внезапные вспышки.</p>
+  <button id="myBtn" onclick="myFunction()">Play video</button>
+  <button id="myBtn" onclick="ds()">Discord</button>
+  <button id="myBtn" onclick="jutsu()">Jut.su</button>
+  <button id="myBtn" onclick="mary()">MaryBot</button>
+</div>
+
+<script>
+var video = document.getElementById("myVideo");
+var btn = document.getElementById("myBtn");
+
+function myFunction() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "Pause";
+  } else {
+    video.pause();
+    btn.innerHTML = "Resume";
+  }
+}
+function mary() {
+  window.location="https://discord.com/oauth2/authorize?client_id=895000641326436382&permissions=8&scope=bot%20applications.commands"
+}
+function ds() {
+  window.location="https://discord.com/users/798995796292010004"
+}
+function jutsu() {
+  window.location="https://jut.su/user/alexmat78/"
+}</script>
+
+</body>
+</html>
