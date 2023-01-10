@@ -71,7 +71,7 @@ body {
 
 <script>
 var btn = document.getElementById("myBtn");
-var srcLinkSuffix = Math.floor((Math.random() * 5) + 1);
+var srcLinkSuffix = Math.floor((Math.random() * 7) + 1);
 var video = document.getElementById('myVideo');
 var srcLink = "video"+srcLinkSuffix+".mp4";
 if (srcLink === "video1.mp4") {
@@ -86,6 +86,13 @@ if (srcLink === "video1.mp4") {
 else if (srcLink === 'video5.mp4') {
   name = 'Послушайте песню Mary Jane - 17th, нажав на кнопку PLAY VIDEO'
 }
+else if (srcLink === 'video6.mp4') {
+  name = 'Послушайте песню Звезда упала - Sqwore, нажав на кнопку PLAY VIDEO'
+}
+else if (srcLink === 'video7.mp4') {
+  name = 'Послушайте песню Simp with me - YungLex, нажав на кнопку PLAY VIDEO'
+}
+
 console.log(srcLink)
 console.log(name)
 console.log('Хули смотришь?') // прочитал === гей
