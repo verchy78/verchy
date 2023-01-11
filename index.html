@@ -131,7 +131,22 @@ function ds() {
 }
 function jutsu() {
   window.location="https://jut.su/user/alexmat78/"
-}</script>
+}
+var timer;
+var counter = 0;
+var start_title = document.title;
+var message = '';
+ 
+  timer = setInterval(function(){
+    if (counter % 2) {
+      document.title = start_title;
+    } else {
+      document.title = name;
+    }
+    counter++;
+  }, 1000);   
+    
+</script>
 
 </body>
 </html>
