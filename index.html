@@ -77,33 +77,42 @@ var srcLink = "video"+srcLinkSuffix+".mp4";
 video.setAttribute("src", srcLink );
 if (srcLink === "video1.mp4") {
   name = "Послушайте песню Сети - Quiizzzmeow, нажав на кнопку PLAY VIDEO"
+  document.getElementById("name").innerHTML = name; 
 } else if (srcLink === "video2.mp4") {
   name = "Послушайте песню Красные глаза - Zxcshaid, нажав на кнопку PLAY VIDEO"
+  document.getElementById("name").innerHTML = name; 
 } else if (srcLink === 'video3.mp4') {
   name = 'Послушайте песню Аквариум - Sqwore, нажав на кнопку PLAY VIDEO'
+  document.getElementById("name").innerHTML = name; 
 } else if (srcLink === 'video4.mp4') {
   name = 'Послушайте песню Этажи - Дипинс, нажав на кнопку PLAY VIDEO'
+  document.getElementById("name").innerHTML = name; 
 }
 else if (srcLink === 'video5.mp4') {
   name = 'Послушайте песню Mary Jane - 17th, нажав на кнопку PLAY VIDEO'
+  document.getElementById("name").innerHTML = name; 
 }
 else if (srcLink === 'video6.mp4') {
   name = 'Послушайте песню Звезда упала - Sqwore, нажав на кнопку PLAY VIDEO'
+  document.getElementById("name").innerHTML = name; 
 }
 else if (srcLink === 'video7.mp4') {
   name = 'Послушайте песню Simp with me - YungLex, нажав на кнопку PLAY VIDEO'
+  document.getElementById("name").innerHTML = name; 
 }
 else if (srcLink === 'video8.mp4') {
   name = 'Послушайте песню Sweater holes - Дипинс, нажав на кнопку PLAY VIDEO'
+  document.getElementById("name").innerHTML = name; 
 }
 else if (srcLink === 'video9.mp4') {
   name = 'Послушайте песню Bloody Mary - Lady Gaga, нажав на кнопку PLAY VIDEO'
+  document.getElementById("name").innerHTML = name; 
 }
 
 console.log(srcLink)
 console.log(name)
 console.log('Хули смотришь?') // прочитал === гей
-document.getElementById("name").innerHTML = name; 
+
 
 function myFunction() {
   if (video.paused) {
