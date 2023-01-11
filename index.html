@@ -71,7 +71,7 @@ body {
 
 <script>
 var btn = document.getElementById("myBtn");
-var srcLinkSuffix = Math.floor((Math.random() * 8) + 1);
+var srcLinkSuffix = Math.floor((Math.random() * 9) + 1);
 var video = document.getElementById('myVideo');
 var srcLink = "video"+srcLinkSuffix+".mp4";
 video.setAttribute("src", srcLink );
@@ -95,6 +95,9 @@ else if (srcLink === 'video7.mp4') {
 }
 else if (srcLink === 'video8.mp4') {
   name = 'Послушайте песню Sweater holes - Дипинс, нажав на кнопку PLAY VIDEO'
+}
+else if (srcLink === 'video8.mp4') {
+  name = 'Послушайте песню Bloody Mary - Lady Gaga, нажав на кнопку PLAY VIDEO'
 }
 
 console.log(srcLink)
