@@ -1,188 +1,39 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>VERCHY</title>
-    <meta name="description" content="Сайт Verchy">
-    <meta name="theme-color" content="#c9029e">
-    <link rel="icon" type="image/png" sizes="300x250" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSO1KDX9heSdijTzqAMOrfKRPb2EjF6twiE4w&usqp=CAU">
-<style>
-* {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  font-family: Arial;
-  font-size: 17px;
-}
-
-.glow {
-  font-size: 80px;
-  color: #fff;
-  text-align: center;
-  -webkit-animation: glow 1s ease-in-out infinite alternate;
-  -moz-animation: glow 1s ease-in-out infinite alternate;
-  animation: glow 1s ease-in-out infinite alternate;
-}
-
-@-webkit-keyframes glow {
-  from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
-  }
-  
-  to {
-    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
-  }
-}
-
-#myVideo {
-  position: fixed;
-  right: 1;
-  bottom: 1;
-  min-width: 100%; 
-  min-height: 100%;
-}
-
-.content {
-  position: fixed;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.7);
-  color: #f1f1f1;
-  width: 100%;
-  padding: 15%;
-}
-
-#myBtn {
-  width: 210px;
-  font-size: 18px;
-  padding: 10px;
-  border: none;
-  background: linear-gradient(90deg, #fa0f8d, #9900f2);
-  border-radius: 30px 0px 30px 0;
-  color: #fff;
-  cursor: pointer;
-}
-   h5 {
-    font-size: 22px;
-    background: linear-gradient(to right, #fa0f8d, #9900f2); 
-    -webkit-background-clip: text; 
-    -webkit-text-fill-color: transparent;
-   }
-#myBtn:hover {
-  background: #fa0f8d;
-  box-shadow: 0px 0px 15px  #fa0f8d;
-  color: black;
-}
-h1 {
-  font-family: 'Caveat Brush', cursive;
-}
-
-</style>
+	<meta charset="utf-8">
+	<title>Verchy Site - Главная</title>
+	<link rel="stylesheet"  href="static/main.css">
 </head>
 <body>
-
-
-<video loop controls src="" id="myVideo">
-  Ваш браузер не поддерживает HTML5 видео
-</video>
-
-<div class="content">
-  <h1 class = 'glow'>VERCHY</h1>
-  <h5 class="cross"><center>Саша, 14 лет. Живу в Москве. Раньше разрабатывал крупного дискорд бота MaryBot. Люблю смотреть аниме и читать мангу. Играю в osu и Genshin Impact<br>Мои ссылочки можно найти ниже.<br><br><div id="name"></div></h5>
-  <button id="myBtn" onclick="myFunction()">PLAY VIDEO</button>
-  <button id="myBtn" onclick="ds()">Discord</button>
-  <button id="myBtn" onclick="jutsu()">Jut.su</button>
-  <button id="myBtn" onclick="git()">GitHub</button>
-  <button id="myBtn" onclick="hoyo()">HoyoLab</button></center>
-</div>
-
-<script>
-var btn = document.getElementById("myBtn");
-var srcLinkSuffix = Math.floor((Math.random() * 9) + 1);
-var video = document.getElementById('myVideo');
-var srcLink = "video"+srcLinkSuffix+".mp4";
-video.setAttribute("src", srcLink );
-if (srcLink === "video1.mp4") {
-  name = "Послушайте песню Сети - Quiizzzmeow, нажав на кнопку PLAY VIDEO"
-  song = 'Сети - Quiizzzmeow' 
-} else if (srcLink === "video2.mp4") {
-  name = "Послушайте песню Красные глаза - Zxcshaid, нажав на кнопку PLAY VIDEO"
-  song = 'Красные глаза - Zxcshaid' 
-} else if (srcLink === 'video3.mp4') {
-  name = 'Послушайте песню Аквариум - Sqwore, нажав на кнопку PLAY VIDEO'
-  song = 'Аквариум - Sqwore' 
-} else if (srcLink === 'video4.mp4') {
-  name = 'Послушайте песню Этажи - Дипинс, нажав на кнопку PLAY VIDEO'
-  song = 'Этажи - Дипинс' 
-}
-else if (srcLink === 'video5.mp4') {
-  name = 'Послушайте песню Mary Jane - 17th, нажав на кнопку PLAY VIDEO'
-  song = 'Mary Jane - 17th' 
-}
-else if (srcLink === 'video6.mp4') {
-  name = 'Послушайте песню Звезда упала - Sqwore, нажав на кнопку PLAY VIDEO'
-  song = 'Звезда упала - Sqwore' 
-}
-else if (srcLink === 'video7.mp4') {
-  name = 'Послушайте песню Simp with me - YungLex, нажав на кнопку PLAY VIDEO'
-  song = 'Simp with me - YungLex' 
-}
-else if (srcLink === 'video8.mp4') {
-  name = 'Послушайте песню Sweater holes - Дипинс, нажав на кнопку PLAY VIDEO'
-  song = 'Sweater holes - Дипинс' 
-}
-else if (srcLink === 'video9.mp4') {
-  name = 'Послушайте песню Bloody Mary - Lady Gaga, нажав на кнопку PLAY VIDEO'
-  song = 'Bloody Mary - Lady Gaga' 
-}
-document.getElementById("name").innerHTML = name; 
-console.log(srcLink)
-console.log(name)
-console.log('Хули смотришь?') // прочитал === гей
-
-
-function myFunction() {
-  if (video.paused) {
-    video.play();
-    btn.innerHTML = "Pause";
-  } else {
-    video.pause();
-    btn.innerHTML = "Resume";
-  }
-}
-function mary() {
-  window.location="https://discord.com/oauth2/authorize?client_id=895000641326436382&permissions=8&scope=bot%20applications.commands"
-}
-function ds() {
-  window.location="https://discord.com/users/798995796292010004"
-}
-function jutsu() {
-  window.location="https://jut.su/user/alexmat78/"
-}
-function git() {
-  window.location="https://github.com/verchy78"
-}
-function hoyo() {
-  window.location="https://www.hoyolab.com/accountCenter/postList?id=209387802"
-}
-var timer;
-var counter = 0;
-var start_title = document.title;
-var message = '';
- 
-  timer = setInterval(function(){
-    if (counter % 2) {
-      document.title = start_title;
-    } else {
-      document.title = song;
-    }
-    counter++;
-  }, 1000);   
-    
-</script>
-
+	<div class="header">
+		<div class="header__section">
+			<img src="https://cdn.discordapp.com/attachments/1078706698157568081/1078978051372761088/IMG_3719.png"  class="headlogo">
+			<div class="header__item"><a style = "text-decoration: none;color: #ba08bd; font-size: 20px;" href = "#">Мой профиль</a></div>
+			<div class="header__item"><a style = "text-decoration: none;color: #ba08bd; font-size: 20px;" href = "#">Настройки</a></div>
+		</div>
+	</div>
+	<div id = "profile">
+		<img src="https://i.pinimg.com/originals/cc/6a/fc/cc6afc451a6d3857d556331e16e10bf7.gif" class="banner">
+		<img src="https://anime-star.ru/wp-content/uploads/2021/12/Nyashnye-anime-avatarki-tyan_01.jpg"  class="avatar">
+		<center><h1 class="nickname">Verchy</h1></center>
+		<div class="bio">
+			<br>
+			<p class="bio-text">Это мое описание.</p>
+		</div>
+		<a style="color: #ba08bd; font-size: 20px;" href="#"><button class="profile-but">Профиль</button></a>
+	</div> 
+<br>
+<br>
+	<div id = "profile">
+		<img src="https://i.pinimg.com/originals/cc/6a/fc/cc6afc451a6d3857d556331e16e10bf7.gif" class="banner">
+		<img src="https://anime-star.ru/wp-content/uploads/2021/12/Nyashnye-anime-avatarki-tyan_01.jpg"  class="avatar">
+		<center><h1 class="nickname">Verchy</h1></center>
+		<div class="bio">
+			<br>
+			<p class="bio-text">Это мое описание. </p>
+		</div>
+		<a href="#"><button class="profile-but">Профиль пользователя</button></a>
+	</div> 
 </body>
 </html>
