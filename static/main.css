@@ -1,0 +1,100 @@
+body {
+	background: url(https://cdn.discordapp.com/attachments/948319992842162179/1078439733920804955/imgonline-com-ua-Resize-c1DlK0VYmES.jpg);
+}
+#profile {
+	background: #23272a;
+	height: 500px;
+	width: 300px;
+	margin: auto;
+	margin-top: 20px;
+	border: 7px solid #921594;
+	border-radius: 80px 30px;
+}
+.bio {
+	background: #121416;
+	height: 240px;
+	width: 280px;
+	margin: auto;
+	border: 0px solid #921594;
+	border-radius: 30px 30px 67px 20px;
+}
+.banner {
+	width: 300px; 
+	height: 150px;
+	border-radius: 80px 30px 0px 0px
+}
+.avatar {
+	margin-left: 96px;
+	margin-top: -60px;
+	width: 90px; 
+	height: 90px;
+	border-radius: 110px;
+  border: 7px solid #23272a; 
+}
+.headlogo {
+	width: 70px; 
+	height: 70px;
+	border-radius: 100px;
+  	border: 3px solid #921594; 
+}
+.nickname {
+	color: #ba08bd;
+	margin-top: -10px;
+	font-family: arial;
+}
+.hr-inclined-left { 
+	margin: 25px 0 40px 0;
+	padding: 0;
+	height: 0;
+	border: none;
+	border-top: 3px solid #333;
+	transform: rotate(2deg);
+}	
+
+.hr-inclined-right { 
+	margin: 25px 0 40px 0;
+	padding: 0;
+	height: 0;
+	border: none;
+	border-top: 3px solid #333;
+	transform: rotate(2deg);
+	box-shadow: 0 0 10px 1px black;
+}	
+.bio-text {
+	font-family: arial;
+	color: white;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.profile-but {
+	position: absolute;
+	background: #23272a;
+	border: 5px solid #921594;
+	border-radius: 30px 30px 70px 20px;
+	height: 50px;
+	width: 250px;
+	margin-left: 20px;
+	margin-top: -60px;
+}
+.headlinks {
+	color: #fff;
+	text-decoration: none;
+}
+.header{
+	margin-top: -10px;
+	width: 100%;
+	margin-left: -10px;
+	justify-content: space-between;
+	padding: 25px;
+	background: #23272a;
+	font-family: Arial;
+}
+.header__section {
+	display: flex;
+	align-items: center;
+}
+.header__item{
+	padding: 10px 15px;
+	font-size: 20px;
+	color: #921594;
+}
