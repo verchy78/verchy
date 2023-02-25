@@ -48,24 +48,6 @@ body {
 	margin-top: -10px;
 	font-family: arial;
 }
-.hr-inclined-left { 
-	margin: 25px 0 40px 0;
-	padding: 0;
-	height: 0;
-	border: none;
-	border-top: 3px solid #333;
-	transform: rotate(2deg);
-}	
-
-.hr-inclined-right { 
-	margin: 25px 0 40px 0;
-	padding: 0;
-	height: 0;
-	border: none;
-	border-top: 3px solid #333;
-	transform: rotate(2deg);
-	box-shadow: 0 0 10px 1px black;
-}	
 .bio-text {
 	font-family: arial;
 	color: white;
@@ -91,20 +73,20 @@ body {
 	text-decoration: none;
 }
 .header{
-	margin-left: -10px;
-	margin-top: -20px;
-	width: 100%;
+	border-radius: 40px;
 	padding: 25px;
 	background: #23272a;
 	font-family: Arial;
+	box-shadow: 7px 5px 5px #921594;
 }
-.footer{
-	margin-bottom: -10px;
-	width: 100%;
-	margin-left: -10px;
+.footer {
+	margin-left: 10px;
+	margin-right: 10px;
+	border-radius: 40px;
 	padding: 60px;
 	background: #23272a;
 	font-family: Arial;
+	box-shadow: 7px 5px 5px  #921594;
 }
 .header__section {
 	display: flex;
